@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UNy-uA-r3F" customClass="HeaderView" customModule="PhotoVideoEditor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsr-wQ-Qht">
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="105"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Music, Voice &amp; Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I7-77-Ek0">
+                            <rect key="frame" x="20" y="2" width="359" height="26"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFm-3i-YwA">
+                            <rect key="frame" x="14" y="86" width="371" height="3"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hFm-3i-YwA" secondAttribute="height" multiplier="371:3" id="Wik-FA-2dv"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet ipsum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-7v-XuQ">
+                            <rect key="frame" x="50" y="29" width="299" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ukR-7v-XuQ" secondAttribute="height" multiplier="299:43" id="m7f-wD-uta"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hFm-3i-YwA" secondAttribute="bottom" constant="16" id="A7L-Zd-cIn"/>
+                        <constraint firstItem="hFm-3i-YwA" firstAttribute="leading" secondItem="nsr-wQ-Qht" secondAttribute="leading" constant="14" id="LPz-Vs-Pow"/>
+                        <constraint firstAttribute="trailing" secondItem="ukR-7v-XuQ" secondAttribute="trailing" constant="50" id="MbS-z3-RMk"/>
+                        <constraint firstItem="ukR-7v-XuQ" firstAttribute="leading" secondItem="nsr-wQ-Qht" secondAttribute="leading" constant="50" id="VRw-BF-VWr"/>
+                        <constraint firstAttribute="trailing" secondItem="hFm-3i-YwA" secondAttribute="trailing" constant="14" id="YK0-hQ-Bdm"/>
+                        <constraint firstItem="2I7-77-Ek0" firstAttribute="leading" secondItem="nsr-wQ-Qht" secondAttribute="leading" constant="20" id="Z27-Fa-no1"/>
+                        <constraint firstItem="ukR-7v-XuQ" firstAttribute="top" secondItem="2I7-77-Ek0" secondAttribute="bottom" constant="1" id="Z6g-KQ-u2u"/>
+                        <constraint firstItem="ukR-7v-XuQ" firstAttribute="top" secondItem="2I7-77-Ek0" secondAttribute="bottom" constant="1" id="bZb-2h-UxD"/>
+                        <constraint firstItem="2I7-77-Ek0" firstAttribute="top" secondItem="nsr-wQ-Qht" secondAttribute="top" constant="2" id="uUn-nI-SYY"/>
+                        <constraint firstAttribute="trailing" secondItem="2I7-77-Ek0" secondAttribute="trailing" constant="20" id="vZe-Ay-vHl"/>
+                        <constraint firstItem="hFm-3i-YwA" firstAttribute="top" secondItem="ukR-7v-XuQ" secondAttribute="bottom" constant="14" id="xrI-hN-hRR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.23529411759999999" green="0.23921568630000001" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="nsr-wQ-Qht" firstAttribute="bottom" secondItem="B3J-AO-z1N" secondAttribute="bottom" id="7WQ-nf-Kxt"/>
+                <constraint firstItem="nsr-wQ-Qht" firstAttribute="leading" secondItem="B3J-AO-z1N" secondAttribute="leading" id="Gnl-Vh-3n1"/>
+                <constraint firstItem="nsr-wQ-Qht" firstAttribute="trailing" secondItem="B3J-AO-z1N" secondAttribute="trailing" id="fW0-mA-Bmu"/>
+                <constraint firstItem="nsr-wQ-Qht" firstAttribute="top" secondItem="B3J-AO-z1N" secondAttribute="top" id="qSm-pv-Por"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="B3J-AO-z1N"/>
+            <connections>
+                <outlet property="containerView" destination="nsr-wQ-Qht" id="8w7-dW-qSU"/>
+                <outlet property="dividerView" destination="hFm-3i-YwA" id="hW6-fe-fLT"/>
+                <outlet property="sectionTitleLabel" destination="2I7-77-Ek0" id="I3q-kE-ARq"/>
+            </connections>
+            <point key="canvasLocation" x="-188.5" y="-632.5"/>
+        </view>
+    </objects>
+</document>
