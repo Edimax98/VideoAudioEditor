@@ -22,10 +22,12 @@ class LangingPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        tableView.allowsSelection = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "HeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
         tableView.register(UINib(nibName: "MusicCustomisationCell", bundle: nil), forCellReuseIdentifier: MusicCustomisationCell.identifier)
+        tableView.register(UINib(nibName: "VideoCustomisationCell", bundle: nil), forCellReuseIdentifier: VideoCustomisationCell.identifier)
     }
     
     fileprivate func getBackgroundColor(for section: Int) -> UIColor {
@@ -55,7 +57,11 @@ extension LangingPageViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MusicCustomisationCell.identifier, for: indexPath) as? MusicCustomisationCell else {
                 return UITableViewCell()
             }
-            
+            return cell
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: VideoCustomisationCell.identifier, for: indexPath) as? VideoCustomisationCell else {
+                return UITableViewCell()
+            }
             return cell
         default:
             break
@@ -92,13 +98,15 @@ extension LangingPageViewController: UITableViewDelegate {
         switch indexPath.section {
         case 0:
             return 510
+        case 1:
+            return 600
         default:
             return 10
         }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100
+        return 110
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

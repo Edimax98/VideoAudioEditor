@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A553A608214FBC090020A9E6 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553A606214FBC090020A9E6 /* VideoCell.swift */; };
+		A553A609214FBC090020A9E6 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A553A607214FBC090020A9E6 /* VideoCell.xib */; };
+		A553A60C214FBC700020A9E6 /* VideoCustomisationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553A60A214FBC700020A9E6 /* VideoCustomisationCell.swift */; };
+		A553A60D214FBC700020A9E6 /* VideoCustomisationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A553A60B214FBC700020A9E6 /* VideoCustomisationCell.xib */; };
 		A5B7C0A5214AB05C0019E5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7C0A4214AB05C0019E5C8 /* AppDelegate.swift */; };
 		A5B7C0A7214AB05C0019E5C8 /* LangingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7C0A6214AB05C0019E5C8 /* LangingPageViewController.swift */; };
 		A5B7C0AA214AB05C0019E5C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B7C0A8214AB05C0019E5C8 /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A553A606214FBC090020A9E6 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		A553A607214FBC090020A9E6 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		A553A60A214FBC700020A9E6 /* VideoCustomisationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCustomisationCell.swift; sourceTree = "<group>"; };
+		A553A60B214FBC700020A9E6 /* VideoCustomisationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCustomisationCell.xib; sourceTree = "<group>"; };
 		A5B7C0A1214AB05C0019E5C8 /* PhotoVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B7C0A4214AB05C0019E5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5B7C0A6214AB05C0019E5C8 /* LangingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangingPageViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				A5B7C0B7214AB2170019E5C8 /* MusicCustomisationCell.swift */,
+				A553A60A214FBC700020A9E6 /* VideoCustomisationCell.swift */,
+				A553A606214FBC090020A9E6 /* VideoCell.swift */,
 				A5B7C0BF214AB6A80019E5C8 /* HeaderView.swift */,
 				A5B7C0C3214ABCC90019E5C8 /* MusicCell.swift */,
 				A5B7C0BC214AB2310019E5C8 /* Xibs */,
@@ -102,6 +112,8 @@
 		A5B7C0BC214AB2310019E5C8 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				A553A60B214FBC700020A9E6 /* VideoCustomisationCell.xib */,
+				A553A607214FBC090020A9E6 /* VideoCell.xib */,
 				A5B7C0B8214AB2170019E5C8 /* MusicCustomisationCell.xib */,
 				A5B7C0BD214AB3AC0019E5C8 /* HeaderView.xib */,
 				A5B7C0C4214ABCC90019E5C8 /* MusicCell.xib */,
@@ -171,8 +183,10 @@
 				A5B7C0BE214AB3AC0019E5C8 /* HeaderView.xib in Resources */,
 				A5B7C0AC214AB05D0019E5C8 /* Assets.xcassets in Resources */,
 				A5B7C0BA214AB2170019E5C8 /* MusicCustomisationCell.xib in Resources */,
+				A553A60D214FBC700020A9E6 /* VideoCustomisationCell.xib in Resources */,
 				A5B7C0AA214AB05C0019E5C8 /* Main.storyboard in Resources */,
 				A5B7C0C6214ABCC90019E5C8 /* MusicCell.xib in Resources */,
+				A553A609214FBC090020A9E6 /* VideoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,11 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A553A60C214FBC700020A9E6 /* VideoCustomisationCell.swift in Sources */,
 				A5B7C0C2214AB8510019E5C8 /* Extensions.swift in Sources */,
 				A5B7C0A7214AB05C0019E5C8 /* LangingPageViewController.swift in Sources */,
 				A5B7C0B9214AB2170019E5C8 /* MusicCustomisationCell.swift in Sources */,
 				A5B7C0A5214AB05C0019E5C8 /* AppDelegate.swift in Sources */,
 				A5B7C0C0214AB6A80019E5C8 /* HeaderView.swift in Sources */,
+				A553A608214FBC090020A9E6 /* VideoCell.swift in Sources */,
 				A5B7C0C5214ABCC90019E5C8 /* MusicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
