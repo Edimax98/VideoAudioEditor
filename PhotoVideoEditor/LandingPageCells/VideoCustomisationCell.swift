@@ -15,12 +15,15 @@ class VideoCustomisationCell: UITableViewCell {
     fileprivate var images = ["effects","montage","settings"]
     fileprivate var cellWidthOffset: CGFloat = 20
     fileprivate var cellHeight: CGFloat = 376
+    fileprivate let defaultBackgroundColor = UIColor(red: 60 / 255, green: 61 / 255, blue: 98 / 255, alpha: 1)
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        self.backgroundColor = defaultBackgroundColor
+        collectionView.backgroundColor = defaultBackgroundColor
         collectionView.register(UINib(nibName: "VideoCell", bundle: nil), forCellWithReuseIdentifier: VideoCell.identifier)
     }
 }
@@ -41,6 +44,7 @@ extension VideoCustomisationCell: UICollectionViewDataSource {
         if let image = UIImage(named: images[indexPath.row]) {
             cell.imageView.image = image
         }
+        cell.backgroundColor = defaultBackgroundColor
         
         return cell
     }
